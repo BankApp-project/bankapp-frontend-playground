@@ -1,0 +1,70 @@
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.title {
+  padding: 1em 0.5em 0.5em;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  font-size: 2em;
+}
+
+.subtext {
+  padding: 0 0.5em 2em;
+  font-size: 1em;
+}
+
+.exercise-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  list-style: none;
+}
+
+.exercise-list li {
+  margin: 2em;
+}
+
+.exercise-list li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 175px;
+  height: 40px;
+  background-color: azure;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+@media screen and (min-width: 1024px) {
+  .title {
+    font-size: 2.75em;
+  }
+
+  .subtext {
+    font-size: 1.1em;
+  }
+
+  .exercise-list li a:hover {
+    background-color: rgb(198, 199, 199);
+  }
+}
+
+@media screen and (min-width: 1720px) {
+  .title {
+    font-size: 3.75em;
+  }
+
+  .subtext {
+    font-size: 1.25em;
+  }
+}
